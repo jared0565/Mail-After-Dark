@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Mail After Dark",
+  "version": "1.0.0",
+  "description": "A private, per-site dark-mode toggle for Gmail and other webmail readers.",
+  "minimum_chrome_version": "119",
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Mail After Dark", "default_popup": "popup.html", "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" } },
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'" }
+}

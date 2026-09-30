@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mail After Dark</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <main>
+    <header><span class="moon" aria-hidden="true">☾</span><span class="wordmark">MAIL AFTER DARK</span></header>
+    <h1>A quieter inbox.</h1>
+    <p class="intro">Less glare. More room to read.</p>
+    <section class="site-panel" aria-label="Current site settings">
+      <p class="eyebrow">THIS WEBSITE</p>
+      <p id="site" class="hostname">Finding your mail tab…</p>
+      <div class="toggle-row">
+        <div><span id="toggle-label">Dark mode</span><p id="mode-description">Original appearance</p></div>
+        <button id="toggle" class="switch" type="button" role="switch" aria-checked="false" aria-labelledby="toggle-label" aria-describedby="mode-description" disabled><span></span></button>
+      </div>
+    </section>
+    <p id="status" role="status" aria-live="polite">Loading…</p>
+    <footer><span class="privacy-dot" aria-hidden="true"></span>Local only. No email collection.</footer>
+  </main>
+</body>
+</html>

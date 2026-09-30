@@ -1,0 +1,27 @@
+:root { color-scheme: dark; --bg: #14181e; --panel: #1e252e; --text: #e8ede9; --muted: #aab5b9; --accent: #b5dec4; }
+* { box-sizing: border-box; }
+body { margin: 0; width: 344px; background: var(--bg); color: var(--text); font: 14px/1.5 "Segoe UI", sans-serif; }
+main { padding: 25px; }
+header { display: flex; align-items: center; gap: 10px; }
+.moon { font-size: 30px; line-height: 1; color: var(--accent); }
+.wordmark { font-size: 10px; font-weight: 700; letter-spacing: 2px; }
+h1 { font: 32px/1.1 Georgia, serif; font-weight: 400; letter-spacing: -.7px; margin: 28px 0 9px; }
+.intro { color: var(--muted); margin: 0 0 24px; }
+.site-panel { background: var(--panel); border: 1px solid #34404a; padding: 18px; border-radius: 8px; }
+.eyebrow { font-size: 9px; letter-spacing: 1.6px; color: var(--muted); margin: 0 0 5px; }
+.hostname { font-weight: 600; margin: 0; overflow-wrap: anywhere; }
+.toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 20px; padding-top: 18px; border-top: 1px solid #36414b; }
+#toggle-label { font-weight: 600; }
+#mode-description { color: var(--muted); font-size: 11px; margin: 4px 0 0; }
+.switch { width: 48px; min-width: 48px; height: 28px; padding: 3px; border: 1px solid #778491; border-radius: 20px; background: #45505d; cursor: pointer; }
+.switch span { display: block; width: 20px; height: 20px; background: #e8ede9; border-radius: 50%; transition: transform 160ms ease; }
+.switch[aria-checked="true"] { background: var(--accent); border-color: var(--accent); }
+.switch[aria-checked="true"] span { transform: translateX(20px); background: #1b3326; }
+.switch:hover { filter: brightness(1.12); }
+.switch:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.switch:disabled { opacity: .45; cursor: default; }
+#status { color: var(--muted); font-size: 12px; min-height: 54px; margin: 16px 0 18px; }
+#status[data-error="true"] { color: #ffc1ad; }
+footer { display: flex; align-items: center; gap: 7px; font-size: 10px; color: var(--muted); }
+.privacy-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+@media (prefers-reduced-motion: reduce) { .switch span { transition: none; } }
